@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocDirect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #bbddff;
+        }
+        .header a {
+            text-decoration: none;
+            color: #333;
+            margin-left: 20px;
+        }
+        .main-banner {
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            color: #99CCFF;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .search-bar {
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .specialties, .featured {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+        .footer {
+            background-color: #bbddff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 10px;
+        }
+        select.search-bar {
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" style=" height: 60px; width: 75px;"/>
+        </div>
+          <div class="nav-search-bar">
+            <input type="text" placeholder="Select Location" class="border border-border rounded-md p-2" />
+            <input type="text" placeholder="Search doctors, clinics, hospitals, etc." class="border border-border rounded-md p-2" />
+          </div>
+        </div>
+        <div class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">My Appointments</a>
+            <a href="#">Doctors</a>
+            <a href="#">Clinics</a>
+            <a href="#">Specialties</a>
+            <a href="#">Contact Us</a>
+            <a href="regispage.html">Sign-In</a>
+        </div>
+      </nav>
+    <div class="section-title">
+        <h2>Explore Popular Specialties</h2>
+    </div>
+    <div class="specialties">
+        <div class="card">
+            <img src="images/cardiology-icon.png" alt="Cardiology" style="width: 100px;">
+            <h3>Cardiology</h3>
+        </div>
+        <div class="card">
+            <img src="images/dermatology-icon.png" alt="Dermatology" style="width: 100px;">
+            <h3>Dermatology</h3>
+        </div>
+        <div class="card">
+            <img src="images/pediatrics-icon.png" alt="Pediatrics" style="width: 100px;">
+            <h3>Pediatrics</h3>
+        </div>
+        <div class="card">
+            <img src="images/orthopedics-icon.png" alt="Orthopedics" style="width: 100px;">
+            <h3>Orthopedics</h3>
+        </div>
+    </div>
+    <div class="section-title">
+        <h2>Featured Doctors and Clinics</h2>
+    </div>
+    <div class="featured">
+        <div class="card">
+            <img src="images/doctor.avif" alt="Doctor 1" style="width: 100px; border-radius: 50%;">
+            <h3>Dr. John Doe</h3>
+            <p>Cardiologist</p>
+            <p>Rating: ★★★★★</p>
+        </div>
+        <div class="card">
+            <img src="images/doctor.avif" alt="Doctor 2" style="width: 100px; border-radius: 50%;">
+            <h3>Dr. Jane Smith</h3>
+            <p>Dermatologist</p>
+            <p>Rating: ★★★★★</p>
+        </div>
+        <div class="card">
+            <img src="images/doctor.avif" alt="Clinic 1" style="width: 100px;">
+            <h3>Health Clinic</h3>
+            <p>Multi-specialty</p>
+            <p>Rating: ★★★★☆</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            <a href="#">About Us</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Help Center</a>
+        </p>
+        <p>Contact us: support@docdirect.com | 123-456-7890</p>
+        <p>
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook" style="width: 24px;"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter" style="width: 24px;"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram" style="width: 24px;"></a>
+        </p>
+    </div>
+</body>
+</html>
